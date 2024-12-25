@@ -1,0 +1,2 @@
+# Stealthy
+Ein unerkennbarer Autoclicker
