@@ -2,10 +2,17 @@ import keyboard
 import time
 import threading
 import random
-from tkinter import Tk, Label, Entry, Button, StringVar, DoubleVar
+from tkinter import Tk, Label, Entry, Button, StringVar
 
 # Globale Variablen
 is_paused = False
+
+# Taste "e" überwachen, um den Start-Button auszuführen
+def on_key_press(event):
+    if event.name == "e":  # Überprüfen, ob Taste "e" gedrückt wurde
+        start_threads()
+# Registriere die Taste "e" für den Start
+keyboard.on_press_key("e", lambda _: start_threads())
 
 # Funktion für das Drücken der Taste
 def press_e():
@@ -16,10 +23,12 @@ def press_e():
             keyboard.press_and_release(default_key.get())
             print(f"Taste '{default_key.get()}' gedrückt.")
         try:
-            min_wait_time = float(default_wait_time.get()) - 0.2
+            min_wait_time = float(default_wait_time.get()) + 0.2
             max_wait_time = float(default_wait_time.get()) + 1.2
-            wait_time = random.uniform(min_wait_time, max_wait_time)
+            wait_time = random.uniform(min_wait_time, max_wait_time)  # Zufallswert neu generieren
             time.sleep(wait_time)
+            warten=str(wait_time)
+            print("Wartezeit: "+ warten)
         except ValueError:
             print("Ungültige Eingabe für die Wartezeit. Bitte eine Zahl eingeben.")
 
@@ -75,7 +84,7 @@ def create_gui():
     # tkinter-Variablen initialisieren
     default_key = StringVar(root, value='e')
     default_pause_key = StringVar(root, value='k')
-    default_wait_time = StringVar(root, value='28.5')  # Als String für Verarbeitung
+    default_wait_time = StringVar(root, value='5.0')  # Als String für Verarbeitung
     initial_wait_time = StringVar(root, value='5.0')  # Als String für Verarbeitung
 
     # Taste-Label und Eingabefeld
