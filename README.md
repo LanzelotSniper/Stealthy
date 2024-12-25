@@ -3,11 +3,6 @@
 **Stealthy** ist eine Anwendung, die entwickelt wurde, um deinen Alltag einfacher zu machen. Diese Anleitung hilft dir, die Anwendung herunterzuladen, zu starten und mögliche Sicherheitsmeldungen zu umgehen.
 
 ## Installation
-
-### 1. GitHub-Seite öffnen
-Besuche die GitHub-Seite der Anwendung unter folgendem Link:
-[Stealthy Repository](https://github.com/LanzelotSniper/Stealthy)
-
 ### 2. Anwendung herunterladen
 - Klicke auf die Datei mit der `.exe`-Endung.
 - Nutze das Symbol mit dem Pfeil nach unten, um die Datei herunterzuladen.
