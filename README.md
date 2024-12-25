@@ -3,15 +3,14 @@
 **Stealthy** ist eine Anwendung, die entwickelt wurde, um deinen Alltag einfacher zu machen. Diese Anleitung hilft dir, die Anwendung herunterzuladen, zu starten und mögliche Sicherheitsmeldungen zu umgehen.
 
 ## Installation
-### 2. Anwendung herunterladen
+### 1. Anwendung herunterladen
 - Klicke auf die Datei mit der `.exe`-Endung.
 - Nutze das Symbol mit dem Pfeil nach unten, um die Datei herunterzuladen.
 
-### 3. Datei finden
+### 2. Datei finden
 Navigiere zu dem Ordner, in den dein Browser die Datei heruntergeladen hat (standardmäßig der `Downloads`-Ordner).
 
 ## Starten der Anwendung
-
 ### 1. Anwendung öffnen
 - Doppelklicke auf die heruntergeladene Datei, um die Anwendung zu starten.
 
